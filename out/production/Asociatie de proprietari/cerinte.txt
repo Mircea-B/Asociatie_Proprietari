@@ -1,0 +1,31 @@
+AsociatiaDeProprietari:
+Clasa Asociatie
+Clasa Locatar
+Clasa Apartament
+==============================
+Class Asociatie:
+    membrii:
+    • List<Apartament>
+    metode(actiuni):
+    • constructorul: primeste lista cu apartamente
+    • getAllLocatar: returneaza o lista cu locatarii din acest bloc (primeste un criteriu de sortare, adica un comparator, in cazul asta alfabetic)
+    • getAllLocatar: returneaza o lista cu locatarii din acest bloc (primeste un criteriu de sortare, adica un comparator, in cazul asta dupa nr apartamentului)
+    • registerLocatarToApartament: primeste ca parametru un locatar si un apartament. Metoda va adauga locatarul in lista de apartamente;
+    • unregisterLocatar:
+=================================
+Clasa Locatar:
+    membri:
+    • nume
+    • Apartament
+    metode(actiuni):
+    • constructor: atribuie numele locatarului apartamentului
+===================================
+Class Apartament:
+    mebrii:
+    • numar camere
+    • Lista de locatari
+    • numar apartament
+    metode(actiuni):
+    • constructor: primeste toate alea
+    • addLocatar:
+    • removeLocatar:
