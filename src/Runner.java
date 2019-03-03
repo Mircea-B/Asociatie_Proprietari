@@ -11,23 +11,26 @@ public class Runner {
         Asociatie asociatie=new Asociatie(listaApartamente);
         Apartament unu = new Apartament(2, 2);
         Apartament doi = new Apartament(3, 1);
-        Apartament trei = new Apartament(3, 1);
-        Locatar mihai = new Locatar("Mihai");
-        Locatar mircea = new Locatar("Mircea");
-        Locatar ana = new Locatar("Ana");
+        Apartament trei = new Apartament(3, 3);
+        Locatar mihai = new Locatar("Mihai",unu);
+        Locatar xander = new Locatar("Xander",doi);
+        Locatar ana = new Locatar("Ana",trei);
+        Locatar bogdan = new Locatar("Bogdan",doi);
 
         unu.addLocatar(mihai);
         unu.addLocatar(ana);
-        doi.addLocatar(mircea);
+        doi.addLocatar(xander);
+        doi.addLocatar(bogdan);
 
         listaLocatari.add(0, mihai);
-        listaLocatari.add(1, mircea);
+        listaLocatari.add(1, xander);
         listaLocatari.add(2, ana);
-        listaLocatari.remove(2);
+
         listaApartamente.add(doi);
         listaApartamente.add(unu);
+        System.out.println(asociatie.getallLocatarSortedbyName());
+        System.out.println(asociatie.getallLocatarSortedbyNumar());
 
-        System.out.println(unu);
-        System.out.println(doi);
+
     }
 }

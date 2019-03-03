@@ -8,6 +8,7 @@ Class Asociatie:
     • List<Apartament>
     metode(actiuni):
     • constructorul: primeste lista cu apartamente
+    - getAllLocatarunsorted
     • getAllLocatar: returneaza o lista cu locatarii din acest bloc (primeste un criteriu de sortare, adica un comparator, in cazul asta alfabetic)
     • getAllLocatar: returneaza o lista cu locatarii din acest bloc (primeste un criteriu de sortare, adica un comparator, in cazul asta dupa nr apartamentului)
     • registerLocatarToApartament: primeste ca parametru un locatar si un apartament. Metoda va adauga locatarul in lista de apartamente;
@@ -21,7 +22,7 @@ Clasa Locatar:
     • constructor: atribuie numele locatarului apartamentului
 ===================================
 Class Apartament:
-    mebrii:
+    membrii:
     • numar camere
     • Lista de locatari
     • numar apartament
@@ -29,3 +30,7 @@ Class Apartament:
     • constructor: primeste toate alea
     • addLocatar:
     • removeLocatar:
+
+
+
+    optimizari de genu backup, rollback multithreading pentru baza de date

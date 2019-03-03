@@ -1,7 +1,15 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
-public class Apartament {
+public class Apartament implements Comparable<Apartament> {
+
+    @Override
+    public int compareTo(Apartament o) {
+        return this.nrApartament-o.nrApartament;
+    }
+
+
     Asociatie asociatia;
     private int nrCamere;
     private List<Locatar> listaLocatari;
@@ -26,8 +34,18 @@ public class Apartament {
     public String toString() {
 
 
-        return (nrApartament + " cu nr de camere: " + nrCamere +" "+ listaLocatari+"\n");
+        return (nrApartament + " cu nr de camere: " + nrCamere +"\n");
     }
+
+    public List<Locatar> getListaLocatari() {
+        return listaLocatari;
+    }
+
+    public List<Locatar> getListaLocatarSorted(){
+       return null;
+
+    }
+
 
 
 }
